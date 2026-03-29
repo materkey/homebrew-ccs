@@ -1,25 +1,25 @@
 class Ccs < Formula
   desc "A TUI and CLI tool for searching and browsing Claude Code and Claude Desktop session history"
   homepage "https://github.com/materkey/ccfullsearch"
-  version "0.5.0"
+  version "0.6.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/materkey/ccfullsearch/releases/download/v0.5.0/ccfullsearch-aarch64-apple-darwin.tar.gz"
-      sha256 "987f8c92b5ac4cded22cec811ddb313d7cbba161a62bbe256aee4f642e3d9331"
+      url "https://github.com/materkey/ccfullsearch/releases/download/v0.6.0/ccfullsearch-aarch64-apple-darwin.tar.gz"
+      sha256 "3c90984c7547f3878382b9c586d22df10343893de089560adf862e49f84a4877"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/materkey/ccfullsearch/releases/download/v0.5.0/ccfullsearch-x86_64-apple-darwin.tar.gz"
-      sha256 "eef43c0de82b8abacfcaaebe8c2c22df237ea29a8c7aa7adcf1e6b4add7bc41d"
+      url "https://github.com/materkey/ccfullsearch/releases/download/v0.6.0/ccfullsearch-x86_64-apple-darwin.tar.gz"
+      sha256 "66fae64b55ea19f7687c8232d841d0945ae4386dbecb69a8f7a8472b6fd9c5e9"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/materkey/ccfullsearch/releases/download/v0.5.0/ccfullsearch-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "e8a9ce42129e80b90041daaf12f412c158cf277481ff90184f50b9e10dc0b614"
+      url "https://github.com/materkey/ccfullsearch/releases/download/v0.6.0/ccfullsearch-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "f62ceb59fc2d524d123a812e54e4f9d0333f3ceaa74afe11eba18cc879b92082"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/materkey/ccfullsearch/releases/download/v0.5.0/ccfullsearch-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ef3375cf90b065a5ca1b46ded3da38a84887bd5498aa9f308ce4e2cb8fc298cb"
+      url "https://github.com/materkey/ccfullsearch/releases/download/v0.6.0/ccfullsearch-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "8652e2f6da5632cb11923fc9ae3c3cfc4a5c0091628372bb6f4c4a776239420c"
     end
   end
   license "MIT"
