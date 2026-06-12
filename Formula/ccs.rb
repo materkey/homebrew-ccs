@@ -1,25 +1,25 @@
 class Ccs < Formula
   desc "A TUI and CLI tool for searching and browsing Claude Code and Claude Desktop session history"
   homepage "https://github.com/materkey/ccfullsearch"
-  version "0.15.0"
+  version "0.16.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/materkey/ccfullsearch/releases/download/v0.15.0/ccfullsearch-aarch64-apple-darwin.tar.gz"
-      sha256 "f08d16762641db1f0ee41a89bd28b5887a3a9617d206914d9427b529b339021f"
+      url "https://github.com/materkey/ccfullsearch/releases/download/v0.16.0/ccfullsearch-aarch64-apple-darwin.tar.gz"
+      sha256 "5069f6b8ba816de9da6a8050a680ad3ad0007a419be6e85a323ffa924e3dd233"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/materkey/ccfullsearch/releases/download/v0.15.0/ccfullsearch-x86_64-apple-darwin.tar.gz"
-      sha256 "49050f706e06d684192f05667afb9cddbc6221e2f080582c55725bd8d022eeb5"
+      url "https://github.com/materkey/ccfullsearch/releases/download/v0.16.0/ccfullsearch-x86_64-apple-darwin.tar.gz"
+      sha256 "2a142330e0492a359efa2b579d096a2e731178247cd5c89f09b1d0ffecd1a980"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/materkey/ccfullsearch/releases/download/v0.15.0/ccfullsearch-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7c8cdcc34b2b2a0b889d9cb7d7ac0501cdf144e67d4f215200bc1958c780e03c"
+      url "https://github.com/materkey/ccfullsearch/releases/download/v0.16.0/ccfullsearch-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "a5eb19030d71d3a80787476ab4d716893e3b501587acb0bedf6f00a6df4d785a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/materkey/ccfullsearch/releases/download/v0.15.0/ccfullsearch-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e812b7a8ce66848d4e51b124537f066d7d8dea2355dd0f54d4f92779fca71419"
+      url "https://github.com/materkey/ccfullsearch/releases/download/v0.16.0/ccfullsearch-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "557e6fbbdc69c6255515b5bdadc61de8476d10711230fe36cc32550ee3929d09"
     end
   end
   license "MIT"
