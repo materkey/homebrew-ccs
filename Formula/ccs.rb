@@ -1,25 +1,25 @@
 class Ccs < Formula
   desc "A TUI and CLI tool for searching and browsing Claude Code and Claude Desktop session history"
   homepage "https://github.com/materkey/ccfullsearch"
-  version "0.16.0"
+  version "0.17.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/materkey/ccfullsearch/releases/download/v0.16.0/ccfullsearch-aarch64-apple-darwin.tar.gz"
-      sha256 "5069f6b8ba816de9da6a8050a680ad3ad0007a419be6e85a323ffa924e3dd233"
+      url "https://github.com/materkey/ccfullsearch/releases/download/v0.17.0/ccfullsearch-aarch64-apple-darwin.tar.gz"
+      sha256 "6e2f2a8b49455438b7917e3a3b7e9afcfa4d31824bb69eac5216b5201122dbeb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/materkey/ccfullsearch/releases/download/v0.16.0/ccfullsearch-x86_64-apple-darwin.tar.gz"
-      sha256 "2a142330e0492a359efa2b579d096a2e731178247cd5c89f09b1d0ffecd1a980"
+      url "https://github.com/materkey/ccfullsearch/releases/download/v0.17.0/ccfullsearch-x86_64-apple-darwin.tar.gz"
+      sha256 "796e5fc24438c2b963e79d980356197adbd4191ce238957a93b800dd4e2738d3"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/materkey/ccfullsearch/releases/download/v0.16.0/ccfullsearch-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "a5eb19030d71d3a80787476ab4d716893e3b501587acb0bedf6f00a6df4d785a"
+      url "https://github.com/materkey/ccfullsearch/releases/download/v0.17.0/ccfullsearch-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "3720ce7254db173d34231de071e03de4540b5c0e38752ef45c276735ab9626ad"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/materkey/ccfullsearch/releases/download/v0.16.0/ccfullsearch-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "557e6fbbdc69c6255515b5bdadc61de8476d10711230fe36cc32550ee3929d09"
+      url "https://github.com/materkey/ccfullsearch/releases/download/v0.17.0/ccfullsearch-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "5b68a62168e33c387aa17535589c6cacd9b20e7c902b21c657cc45135ffe35df"
     end
   end
   license "MIT"
@@ -52,10 +52,18 @@ class Ccs < Formula
   end
 
   def install
-    bin.install "ccs" if OS.mac? && Hardware::CPU.arm?
-    bin.install "ccs" if OS.mac? && Hardware::CPU.intel?
-    bin.install "ccs" if OS.linux? && Hardware::CPU.arm?
-    bin.install "ccs" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "ccs"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "ccs"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "ccs"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "ccs"
+    end
 
     install_binary_aliases!
 
